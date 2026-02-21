@@ -2,39 +2,18 @@ import React from "react";
 
 const EVENTS = [
   {
-    time: "10:00 AM",
+    time: "Time TBC",
     title: "Anand Karaj Ceremony",
     description:
       "The sacred Sikh wedding ceremony takes place at the Gurudwara, blessed by the holy scripture and four rounds around the Guru Granth Sahib.",
     icon: "🕊️",
   },
   {
-    time: "1:00 PM",
+    time: "Time TBC",
     title: "Wedding Luncheon",
     description:
       "A traditional Punjabi feast with family and friends. Enjoy an elaborate spread of authentic dishes in celebration.",
     icon: "🍽️",
-  },
-  {
-    time: "4:00 PM",
-    title: "Photography & Portraits",
-    description:
-      "Couple portraits and family photographs set against the beautiful backdrop of Punjab.",
-    icon: "📸",
-  },
-  {
-    time: "7:00 PM",
-    title: "Reception & Celebrations",
-    description:
-      "An evening of music, dance, and joy. The night comes alive with bhangra, heartfelt speeches, and dancing.",
-    icon: "🎉",
-  },
-  {
-    time: "10:00 PM",
-    title: "Dinner & Festivities",
-    description:
-      "Conclude the celebration with a grand dinner and continue the festivities late into the night.",
-    icon: "✨",
   },
 ];
 

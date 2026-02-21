@@ -32,18 +32,18 @@ function CountdownUnit({ value, label }: { value: number; label: string }) {
     <div className="flex flex-col items-center">
       <div className="relative">
         {/* Card */}
-        <div className="w-20 h-20 md:w-28 md:h-28 bg-white/80 backdrop-blur-sm border border-gold/20 rounded-sm flex items-center justify-center shadow-sm">
-          <span className="font-serif text-4xl md:text-5xl text-charcoal tabular-nums">
+        <div className="w-14 h-14 sm:w-20 sm:h-20 md:w-28 md:h-28 bg-white/80 backdrop-blur-sm border border-gold/20 rounded-sm flex items-center justify-center shadow-sm">
+          <span className="font-serif text-2xl sm:text-4xl md:text-5xl text-charcoal tabular-nums">
             {String(value).padStart(2, "0")}
           </span>
         </div>
         {/* Corner accents */}
-        <div className="absolute -top-1 -left-1 w-3 h-3 border-t border-l border-gold/50" />
-        <div className="absolute -top-1 -right-1 w-3 h-3 border-t border-r border-gold/50" />
-        <div className="absolute -bottom-1 -left-1 w-3 h-3 border-b border-l border-gold/50" />
-        <div className="absolute -bottom-1 -right-1 w-3 h-3 border-b border-r border-gold/50" />
+        <div className="absolute -top-1 -left-1 w-2 h-2 sm:w-3 sm:h-3 border-t border-l border-gold/50" />
+        <div className="absolute -top-1 -right-1 w-2 h-2 sm:w-3 sm:h-3 border-t border-r border-gold/50" />
+        <div className="absolute -bottom-1 -left-1 w-2 h-2 sm:w-3 sm:h-3 border-b border-l border-gold/50" />
+        <div className="absolute -bottom-1 -right-1 w-2 h-2 sm:w-3 sm:h-3 border-b border-r border-gold/50" />
       </div>
-      <span className="mt-3 font-serif text-xs tracking-widest uppercase text-charcoal/50">
+      <span className="mt-2 sm:mt-3 font-serif text-[10px] sm:text-xs tracking-widest uppercase text-charcoal/50">
         {label}
       </span>
     </div>
@@ -77,21 +77,21 @@ export default function Countdown() {
         </p>
 
         {mounted ? (
-          <div className="flex items-center justify-center gap-6 md:gap-10">
+          <div className="flex items-center justify-center gap-2 sm:gap-6 md:gap-10">
             <CountdownUnit value={timeLeft.days} label="Days" />
-            <div className="text-gold/60 text-3xl font-serif pb-8">:</div>
+            <div className="text-gold/60 text-xl sm:text-3xl font-serif pb-6 sm:pb-8">:</div>
             <CountdownUnit value={timeLeft.hours} label="Hours" />
-            <div className="text-gold/60 text-3xl font-serif pb-8">:</div>
+            <div className="text-gold/60 text-xl sm:text-3xl font-serif pb-6 sm:pb-8">:</div>
             <CountdownUnit value={timeLeft.minutes} label="Minutes" />
-            <div className="text-gold/60 text-3xl font-serif pb-8">:</div>
+            <div className="text-gold/60 text-xl sm:text-3xl font-serif pb-6 sm:pb-8">:</div>
             <CountdownUnit value={timeLeft.seconds} label="Seconds" />
           </div>
         ) : (
-          <div className="flex items-center justify-center gap-6 md:gap-10">
+          <div className="flex items-center justify-center gap-2 sm:gap-6 md:gap-10">
             {["Days", "Hours", "Minutes", "Seconds"].map((label) => (
               <div key={label} className="flex flex-col items-center">
-                <div className="w-20 h-20 md:w-28 md:h-28 shimmer rounded-sm" />
-                <span className="mt-3 font-serif text-xs tracking-widest uppercase text-charcoal/50">
+                <div className="w-14 h-14 sm:w-20 sm:h-20 md:w-28 md:h-28 shimmer rounded-sm" />
+                <span className="mt-2 sm:mt-3 font-serif text-[10px] sm:text-xs tracking-widest uppercase text-charcoal/50">
                   {label}
                 </span>
               </div>

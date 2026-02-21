@@ -43,9 +43,7 @@ export default function Venue() {
                     Punjab, India
                   </h3>
                   <p className="font-sans text-sm text-charcoal/60 leading-relaxed">
-                    The venue details will be shared with confirmed guests.
-                    Please RSVP and we will follow up with the precise address
-                    and directions.
+                    Venue to be decided — details will be shared with confirmed guests closer to the date.
                   </p>
                 </div>
               </div>
@@ -57,11 +55,11 @@ export default function Venue() {
                 </div>
                 <div className="flex items-center gap-3 text-sm font-sans text-charcoal/70">
                   <span className="text-gold">✦</span>
-                  <span>Ceremony begins at 10:00 AM (IST)</span>
+                  <span>Punjab, India</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-sans text-charcoal/70">
                   <span className="text-gold">✦</span>
-                  <span>Celebrations continue through the evening</span>
+                  <span>Exact location TBC</span>
                 </div>
               </div>
             </div>
