@@ -102,7 +102,7 @@ export default function RSVP() {
           </div>
           <p className="font-serif text-charcoal/60">
             Kindly respond by{" "}
-            <span className="text-gold font-medium">1st March 2027</span>
+            <span className="text-gold font-medium">28th March 2026</span>
           </p>
         </div>
 
