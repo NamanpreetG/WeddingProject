@@ -34,7 +34,7 @@ function Footer() {
         <div className="w-16 h-px bg-gold/30" />
       </div>
       <p className="font-sans text-xs text-ivory/30">
-        Made with love ♥
+        Made with love ♥ by Naman
       </p>
     </footer>
   );
