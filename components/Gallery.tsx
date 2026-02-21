@@ -7,27 +7,27 @@ import Image from "next/image";
 const GALLERY_ITEMS = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=800&q=80",
-    alt: "Wedding celebration",
+    src: "/images/photo1.jpg",
+    alt: "Family celebration",
     span: "col-span-1 row-span-2",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800&q=80",
-    alt: "Couple portrait",
-    span: "col-span-1 row-span-1",
+    src: "/images/photo2.jpg",
+    alt: "Family gathering",
+    span: "col-span-1 row-span-2",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=80",
-    alt: "Wedding flowers",
-    span: "col-span-1 row-span-1",
+    src: "/images/photo3.jpg",
+    alt: "Family portrait",
+    span: "col-span-1 row-span-2",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1519741347686-c1e331fcb3d0?w=800&q=80",
-    alt: "Wedding rings",
-    span: "col-span-2 row-span-1",
+    src: "/images/photo4.jpg",
+    alt: "Celebration together",
+    span: "col-span-1 row-span-2",
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const GALLERY_ITEMS = [
     id: 6,
     src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80",
     alt: "Wedding reception",
-    span: "col-span-1 row-span-2",
+    span: "col-span-1 row-span-1",
   },
   {
     id: 7,
