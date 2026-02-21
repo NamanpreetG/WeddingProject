@@ -51,7 +51,7 @@ export default function Venue() {
               <div className="border-t border-gold/15 pt-5 space-y-3">
                 <div className="flex items-center gap-3 text-sm font-sans text-charcoal/70">
                   <span className="text-gold">✦</span>
-                  <span>2nd April 2027 — Saturday</span>
+                  <span>2nd April 2027 — Friday</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-sans text-charcoal/70">
                   <span className="text-gold">✦</span>
