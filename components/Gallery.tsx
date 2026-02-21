@@ -6,30 +6,19 @@ import Image from "next/image";
 // Placeholder gallery items — swap src for real photos
 // Add new photos to public/images/ and list them here
 const GALLERY_ITEMS = [
-  {
-    id: 1,
-    src: "/images/photo1.jpg",
-    alt: "Family celebration",
-    span: "col-span-1 row-span-2",
-  },
-  {
-    id: 2,
-    src: "/images/photo2.jpg",
-    alt: "Family gathering",
-    span: "col-span-1 row-span-2",
-  },
-  {
-    id: 3,
-    src: "/images/photo3.jpg",
-    alt: "Family portrait",
-    span: "col-span-1 row-span-2",
-  },
-  {
-    id: 4,
-    src: "/images/photo4.jpg",
-    alt: "Celebration together",
-    span: "col-span-1 row-span-2",
-  },
+  { id: 1,  src: "/images/IMG_8645.jpeg", alt: "Family celebration",  span: "col-span-1 row-span-2" },
+  { id: 2,  src: "/images/IMG_9428.JPG",  alt: "Family gathering",    span: "col-span-1 row-span-1" },
+  { id: 3,  src: "/images/IMG_9439.JPG",  alt: "Family portrait",     span: "col-span-1 row-span-2" },
+  { id: 4,  src: "/images/IMG_9442.JPG",  alt: "Celebration together", span: "col-span-1 row-span-1" },
+  { id: 5,  src: "/images/IMG_9443.JPG",  alt: "Together",            span: "col-span-1 row-span-1" },
+  { id: 6,  src: "/images/IMG_9444.JPG",  alt: "Celebration",         span: "col-span-1 row-span-2" },
+  { id: 7,  src: "/images/IMG_9445.JPG",  alt: "Family moment",       span: "col-span-1 row-span-1" },
+  { id: 8,  src: "/images/IMG_9449.JPG",  alt: "Together",            span: "col-span-1 row-span-1" },
+  { id: 9,  src: "/images/IMG_9450.JPG",  alt: "Family",              span: "col-span-1 row-span-1" },
+  { id: 10, src: "/images/IMG_9453.JPG",  alt: "Celebration",         span: "col-span-1 row-span-2" },
+  { id: 11, src: "/images/IMG_9455.JPG",  alt: "Family portrait",     span: "col-span-1 row-span-1" },
+  { id: 12, src: "/images/IMG_9457.JPG",  alt: "Together",            span: "col-span-1 row-span-1" },
+  { id: 13, src: "/images/IMG_9458.JPG",  alt: "Family gathering",    span: "col-span-1 row-span-1" },
 ];
 
 export default function Gallery() {
