@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import Image from "next/image";
 
 // Placeholder gallery items — swap src for real photos
+// Add new photos to public/images/ and list them here
 const GALLERY_ITEMS = [
   {
     id: 1,
@@ -28,36 +29,6 @@ const GALLERY_ITEMS = [
     src: "/images/photo4.jpg",
     alt: "Celebration together",
     span: "col-span-1 row-span-2",
-  },
-  {
-    id: 5,
-    src: "https://images.unsplash.com/photo-1595407753234-0882f1e77954?w=800&q=80",
-    alt: "Wedding ceremony",
-    span: "col-span-1 row-span-1",
-  },
-  {
-    id: 6,
-    src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80",
-    alt: "Wedding reception",
-    span: "col-span-1 row-span-1",
-  },
-  {
-    id: 7,
-    src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80",
-    alt: "Wedding day",
-    span: "col-span-1 row-span-1",
-  },
-  {
-    id: 8,
-    src: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=800&q=80",
-    alt: "Celebration flowers",
-    span: "col-span-1 row-span-1",
-  },
-  {
-    id: 9,
-    src: "https://images.unsplash.com/photo-1470217957101-da7150b9b681?w=800&q=80",
-    alt: "Wedding moments",
-    span: "col-span-1 row-span-1",
   },
 ];
 
