@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import PhotoUpload from "./PhotoUpload";
 
 interface Photo {
   thumb: string;
@@ -12,17 +12,25 @@ interface Photo {
   height: number;
 }
 
-export default function Gallery() {
+export default function SharedGallery() {
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [loading, setLoading] = useState(true);
   const [lightboxImg, setLightboxImg] = useState<Photo | null>(null);
 
+  async function fetchPhotos() {
+    try {
+      const res = await fetch("/api/shared-gallery");
+      const data = await res.json();
+      setPhotos(data.photos ?? []);
+    } catch {
+      setPhotos([]);
+    } finally {
+      setLoading(false);
+    }
+  }
+
   useEffect(() => {
-    fetch("/api/gallery")
-      .then((res) => res.json())
-      .then((data) => setPhotos(data.photos ?? []))
-      .catch(() => setPhotos([]))
-      .finally(() => setLoading(false));
+    fetchPhotos();
   }, []);
 
   const openLightbox = useCallback((photo: Photo) => {
@@ -36,28 +44,43 @@ export default function Gallery() {
   }, []);
 
   return (
-    <section id="gallery" className="py-24 px-6 bg-ivory">
+    <section id="shared-gallery" className="py-24 px-6 bg-gradient-to-b from-blush/10 to-ivory">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <p className="section-subtitle mb-3">Captured Moments</p>
-          <h2 className="section-title mb-2">Gallery</h2>
+          <p className="section-subtitle mb-3">From Our Guests</p>
+          <h2 className="section-title mb-2">Shared Gallery</h2>
           <div className="ornament-divider my-8 max-w-xs mx-auto">
             <span className="text-gold text-sm">✦</span>
           </div>
           <p className="font-serif text-charcoal/60">
-            A glimpse of our love story — more photos coming soon
+            Share your favourite moments with us
           </p>
         </div>
 
+        {/* Upload section */}
+        <div className="mb-16">
+          <PhotoUpload onUploaded={() => setTimeout(fetchPhotos, 2000)} />
+        </div>
+
+        {/* Divider */}
+        {photos.length > 0 && (
+          <div className="ornament-divider my-12 max-w-sm mx-auto">
+            <span className="text-gold text-sm">✦</span>
+          </div>
+        )}
+
+        {/* Guest photos */}
         {loading ? (
-          <div className="columns-2 md:columns-3 gap-4 space-y-4">
-            {Array.from({ length: 9 }).map((_, i) => (
+          <div className="columns-2 md:columns-3 gap-4">
+            {Array.from({ length: 6 }).map((_, i) => (
               <div key={i} className="shimmer rounded-sm w-full h-48 mb-4" />
             ))}
           </div>
         ) : photos.length === 0 ? (
-          <div className="text-center py-16">
-            <p className="font-serif text-charcoal/40 italic">Photos coming soon ✦</p>
+          <div className="text-center py-8">
+            <p className="font-serif text-charcoal/40 italic">
+              No photos shared yet — be the first! ✦
+            </p>
           </div>
         ) : (
           <div className="columns-2 md:columns-3 gap-3 md:gap-4">
@@ -82,20 +105,10 @@ export default function Gallery() {
                     </svg>
                   </div>
                 </div>
-                <div className="absolute inset-0 border border-white/10 rounded-sm pointer-events-none" />
               </div>
             ))}
           </div>
         )}
-        {/* Share photos CTA */}
-        <div className="text-center mt-12">
-          <Link
-            href="/shared-gallery"
-            className="inline-block px-10 py-3 border border-gold text-gold font-serif text-sm tracking-widest uppercase hover:bg-gold hover:text-ivory transition-all duration-300 rounded-sm"
-          >
-            Share Your Photos ✦
-          </Link>
-        </div>
       </div>
 
       {lightboxImg && (

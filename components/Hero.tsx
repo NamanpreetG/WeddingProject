@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { label: "Schedule", href: "#schedule" },
   { label: "Venue", href: "#venue" },
   { label: "Gallery", href: "#gallery" },
+  { label: "Share Photos", href: "/shared-gallery" },
   { label: "RSVP", href: "#rsvp" },
 ];
 
