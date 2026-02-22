@@ -125,12 +125,12 @@ export default function Hero() {
             : "bg-transparent py-5"
         }`}
       >
-        <ul className="flex items-center justify-center gap-6 md:gap-10">
+        <ul className="flex items-center justify-start md:justify-center gap-4 md:gap-10 overflow-x-auto px-4 md:px-0 no-scrollbar w-full">
           {NAV_LINKS.map((link) => (
-            <li key={link.href}>
+            <li key={link.href} className="flex-shrink-0">
               <a
                 href={link.href}
-                className="font-serif text-sm tracking-widest uppercase text-charcoal/70 hover:text-gold transition-colors duration-300"
+                className="font-serif text-xs md:text-sm tracking-widest uppercase text-charcoal/70 hover:text-gold transition-colors duration-300 whitespace-nowrap"
               >
                 {link.label}
               </a>
