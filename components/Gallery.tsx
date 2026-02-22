@@ -90,9 +90,6 @@ export default function Gallery() {
           ))}
         </div>
 
-        <p className="text-center mt-8 font-serif text-sm text-charcoal/40 italic">
-          ✦ Real photos will be added closer to the wedding day ✦
-        </p>
       </div>
 
       {/* Lightbox */}
