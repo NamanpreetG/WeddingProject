@@ -147,10 +147,6 @@ export default function Hero() {
           <div className="w-16 h-px bg-gradient-to-l from-transparent to-gold/60" />
         </div>
 
-        <p className="font-serif text-xs tracking-[0.4em] uppercase text-charcoal/50 mb-4">
-          Together with their families
-        </p>
-
         <h1 className="font-script text-7xl md:text-9xl text-charcoal leading-tight">
           Karminder
         </h1>
@@ -175,7 +171,7 @@ export default function Hero() {
           2nd April 2027
         </p>
         <p className="font-serif text-base md:text-lg text-charcoal/50 tracking-[0.2em] uppercase mt-1">
-          Punjab, India
+          Jalandhar, Punjab
         </p>
 
         {/* CTA */}

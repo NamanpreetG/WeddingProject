@@ -9,7 +9,7 @@ export default function Venue() {
             <span className="text-gold text-sm">✦</span>
           </div>
           <p className="font-serif text-charcoal/60">
-            Join us in the heart of Punjab, India
+            Join us in Jalandhar, Punjab
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function Venue() {
                 </div>
                 <div className="flex items-center gap-3 text-sm font-sans text-charcoal/70">
                   <span className="text-gold">✦</span>
-                  <span>Punjab, India</span>
+                  <span>Jalandhar, Punjab</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm font-sans text-charcoal/70">
                   <span className="text-gold">✦</span>

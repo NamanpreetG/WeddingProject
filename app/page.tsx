@@ -26,7 +26,7 @@ function Footer() {
         Karminder &amp; Simranjit
       </p>
       <p className="font-serif text-xs tracking-widest uppercase mb-6">
-        2nd April 2027 · Punjab, India
+        2nd April 2027 · Jalandhar, Punjab
       </p>
       <div className="flex items-center justify-center gap-3 mb-6">
         <div className="w-16 h-px bg-gold/30" />

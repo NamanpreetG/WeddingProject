@@ -25,7 +25,7 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "Karminder & Simranjit — 2nd April 2027",
   description:
-    "Join us as we celebrate the wedding of Karminder and Simranjit on 2nd April 2027 in Punjab, India.",
+    "Join us as we celebrate the wedding of Karminder and Simranjit on 2nd April 2027 in Jalandhar, Punjab.",
   openGraph: {
     title: "Karminder & Simranjit — Wedding Invitation",
     description: "We joyfully invite you to celebrate our wedding day.",

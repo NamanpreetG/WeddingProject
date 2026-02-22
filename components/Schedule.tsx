@@ -28,7 +28,7 @@ export default function Schedule() {
             <span className="text-gold text-sm">✦</span>
           </div>
           <p className="font-serif text-charcoal/60">
-            2nd April 2027 · Punjab, India
+            2nd April 2027 · Jalandhar, Punjab
           </p>
         </div>
 
