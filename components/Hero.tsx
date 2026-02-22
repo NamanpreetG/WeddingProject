@@ -148,7 +148,7 @@ export default function Hero() {
           <div className="w-16 h-px bg-gradient-to-l from-transparent to-gold/60" />
         </div>
 
-        <h1 className="font-script text-7xl md:text-9xl text-charcoal leading-tight">
+        <h1 className="font-script text-5xl sm:text-7xl md:text-9xl text-charcoal leading-tight">
           Karminder
         </h1>
 
@@ -158,7 +158,7 @@ export default function Hero() {
           <div className="w-24 h-px bg-gold/40" />
         </div>
 
-        <h1 className="font-script text-7xl md:text-9xl text-charcoal leading-tight">
+        <h1 className="font-script text-5xl sm:text-7xl md:text-9xl text-charcoal leading-tight">
           Simranjit
         </h1>
 
