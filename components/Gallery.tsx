@@ -47,7 +47,7 @@ export default function Gallery() {
             <span className="text-gold text-sm">✦</span>
           </div>
           <p className="font-serif text-charcoal/60">
-            Photos coming soon ✦
+            A glimpse of our love story — more photos coming soon
           </p>
         </div>
 
